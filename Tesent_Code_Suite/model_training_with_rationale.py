@@ -30,7 +30,7 @@ num_labels = 3
 learning_rate = 2e-5
 batch_size = 64
 optimizer_type = "Adam"
-lambda_attn = 0.6
+lambda_attn = 0.7
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -316,3 +316,4 @@ with open(results_file, mode="w", newline="") as f:
     model.bert.save_pretrained("model_outputs")
     tokenizer.save_pretrained("model_outputs")
     print(f"Final model and tokenizer saved to model_outputs")
+
