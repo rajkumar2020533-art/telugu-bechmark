@@ -29,7 +29,7 @@ param_grid = {
     "learning_rate": [1e-5, 2e-5, 3e-5, 4e-5, 5e-5],
     "batch_size": [16, 32, 64],
     "optimizer": ["Adam"],
-    "lambda": [0.2, 0.3, 0.4, 0.5, 0.6, 0.7]
+    "lambda": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7]
 }
 num_epochs = 7
 max_length = 128
@@ -324,3 +324,4 @@ with open(results_file, mode="w", newline="") as f:
             params=params
         )
 print("Grid search complete. Results saved to:", results_file)
+
